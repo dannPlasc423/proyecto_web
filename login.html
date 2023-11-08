@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<!--Logo en la pestaña de google-->
+<link rel="icon" href="imagenes/logoPestaña.jpg">
+
+<body>
+<!--Barra de navegación-->
+<nav class="navbar">
+    <!--Logo en la barra de navegación-->    
+    <img src="imagenes/logo_pagina.jpg" height="120">
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="Manuales.html">Manuales</a>
+            <a href="Pintura.html">Pintura</a>
+            <a href="Dibujo.html">Dibujo</a>
+            <a href="Nosotros.html">Nosotros</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="registro.html">Registrarse</a>
+            <a href="logout.php">Cerrar Sesión</a>
+        </nav>
+
+<title>Iniciar Sesión</title> 
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+
+ <link rel="stylesheet" href="login.css">
+ <link rel="icon" href="imagenes/logo_pagina.jpg">	
+
+</head> 
+
+    <h1><font color = "cyan"> Log In </font></h1>
+    <div class="cont">
+
+<form action="login.php" method="POST">
+    <div class="input-cont">
+        <input type="text" placeholder="Correo Electronico" name="correo">
+        </div>
+        
+        <div class="input-cont">
+        <input type="password" placeholder="Contraseña" name="password">
+        </div>
+        
+        <div style="text-align:center;">
+            <p><font color = "aqua"> ¡Entra Ahora! </font></p>
+            </div>
+        
+        <div style="text-align:center;">
+        <input type="submit" value="Login" class="boton">
+        </div>
+</form>
+
+<div style="text-align:center;">
+<p><font color = "aqua"> Al registrarte aceptas nuestras condiciones de privacidad </font></p>
+<p><font color = "aqua">¿No tienes una cuenta? <a class="link" href="registro.html">Registrate </font></p>
+</div>
+    </form>
+    </body>
+</html>

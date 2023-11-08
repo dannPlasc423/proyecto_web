@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Titulo en la pestaña de google-->
+    <title>Artist's Articles</title>
+    
+    <!--Link de enlace con css-->
+    <link rel="stylesheet" href="register.css">
+    
+<!--Logo en la pestaña de google-->
+<link rel="icon" href="imagenes/logoPestaña.jpg">
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <nav class="navbar">
+        <!--Logo en la barra de navegación-->
+<img src="imagenes/logo_pagina.jpg" height="120">
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="manuales.html">Manuales</a>
+        <a href="pintura.html">Pintura</a>
+        <a href="dibujo.html">Dibujo</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="inicio.html">Inicio</a>
+        <a href="registro.html">Registrarse</a>
+        <a href="logout.php">Cerrar Sesión</a>
+    </nav>
+
+<h1><font color = "cyan"> Registro </font></h1>
+
+</div>
+
+    <form class="datos" action="registro.php" method="POST">
+
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" required="Obligatorio" placeholder="Escribe tu nombre">
+        </p>
+
+        <p>
+            <label for="correo">Correo</label>
+            <input type="text" name="correo"  required="Obligatorio" placeholder="Escribe tu correo">
+        </p>
+
+        <p>
+            <label for="correo">Contrasenia</label>
+            <input type="text" name="contrasena"  required="Obligatorio" placeholder="Escribe tu contrasenia">
+        </p>
+
+        <p>
+            <label for="telefono">Telefono</label>
+            <input type="telefono" name="telefono"  required="Obligatorio" placeholder="Escribe tu ID">
+        </p>
+
+        <p>
+            <label for="sexo">Sexo</label>
+            <input type="sexo" name="sexo"  required="Obligatorio" placeholder="Escribe tu ID">
+        </p>
+   
+<button type="submit" name="registrar" id="registrar"><p>registrar</p></button>
+
+</body>
+</html>

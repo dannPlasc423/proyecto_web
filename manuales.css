@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(imagenes/fondo_manuales.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*Modifica todo el contenido dentro de una sección */
+section{
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+h1{
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+h2{
+    color: aliceblue;
+    font-size: 4em;
+    text-align: center;
+}
+
+.container{
+    margin-top: 50px;
+    width: 1600px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container1{
+    margin-top: 50px;
+    width: 1600px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.container2{
+    margin-top: 50px;
+    width: 1600px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

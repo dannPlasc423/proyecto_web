@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url(imagenes/fondo_login.png);
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+/*Modifica la etiqueta de titulo "h1"*/
+h1 {
+    color: white;
+    font-size: 4em;
+    text-align: center;
+}
+
+/*Modifica la etiqueta de titulo "h3"*/
+h3{
+    color:#d1f36b
+    font-size: 1em;
+    text-align: center;
+}
+
+/*Modifica la barra de navegación "h3"*/
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: rgb(216, 183, 33);
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 20px;
+}
+
+/*El efecto de sombreado de la barra de navegación*/
+.navbar a:hover {
+    background: #24a7ee;
+}
+
+/*Hace fija la barre de navegación */
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+/*Color de letras de la barra de navegación */
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: rgb(147, 238, 77);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*El efecto de sombreado de la barra de navegación */
+.navbar a:hover {
+    background: #46c0f0;
+}
+
+/*Valores predeterminados para justificar los titulos */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Valores predeterminados para justificar los titulos */
+.header {
+    height: 40vh !important;
+    background: url(img/) no-repeat center;
+    background-size: cover;
+}
+
+/*Modifica las cáracterísticas del titulo*/
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(120, 242, 86);
+}
+
+.h {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px; 
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+/*Modifica las caracteristicas de la sección "mision" */
+.mision{
+    margin-top: 100px;
+    position: absolute;
+    float: left;
+}
+
+/*Modifica las caracteristicas de la sección "vision" */
+.vision{
+    margin-top: 200px;
+    position: absolute;
+    float: right;
+}
+
+/*Modifica las caracteristicas de la sección "valores" */
+.valores{
+    margin-top: 300px;
+    position: absolute;
+    float: right;
+}
+
+.titulo{
+    margin-top: 150px;
+    margin-left: 100px;
+    position: absolute;
+    float: left;
+}
+
+/*Recuadro de tres columnas que almacena tres parrafos: mision, vision y valores.
+Los centra y acomoda dentro de la sección de la página dandoles altura y anchura.*/
+.container{
+    margin-top: 50px;
+    width: 1600px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+/*Modifica todo el contenido dentro de una sección */
+.section{
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.input-cont{
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.boton{
+    text-align: center;
+    background-color: #4CAF50; /* Green */
+    border: 3px solid #0099CC;
+    border-radius: 8px;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    background: #eb94d0;
+}

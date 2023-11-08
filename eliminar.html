@@ -1,0 +1,70 @@
+<html>
+<head>
+	
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<center>
+<form name="Mantenimiento" action="mantenimiento.php" method="post">
+<table border="1">
+
+<tr>
+<td colspan="4"><label>Insertar, Editar y Eliminar Productos</label></td>
+</tr>
+
+<tr><td colspan="4"><label>Registrar Producto </label></td></tr>
+<tr>
+	<td><label>Codigo</label></td><td><input type="text" value="" maxlength="30" name="txtcodigo"></td>
+	<td><label>Nombre Producto</label></td><td><input type="text" value="" maxlength="30" name="txtnombreproducto" size="30"></td>
+</tr>
+<tr>
+	<td><label>Marca</label></td><td><input type="text" value="" maxlength="30" name="txtmarca"></td>
+	<td><label>Precio</label></td><td><input type="text" value="" maxlength="30" size="30" name="txtprecio"></td>
+</tr>
+
+<tr><td colspan="4" align="center">
+<input type="submit" value="Nuevo" name="limpiardatos" >
+<input type="submit" value="Guardar" name="grabardatos" >
+<input type="submit" value="Modificar" name="modificardatos" >
+<input type="submit" value="Eliminar" name="eliminardatos">
+<input type="submit" value="Buscar" name="buscarproducto">
+
+</td>
+</tr>
+
+<tr><td colspan="4"><label>Listado de Productos </label></td></tr>
+
+<tr><td><label>Codigo</label></td>
+	<td><label>Nombre Producto</label></td>
+	<td><label>Marca</label></td>
+	<td><label>Precio</label></td>
+</tr>
+
+<?php 
+$sql="SELECT * FROM editarproductos";
+if(isset($_GET["cod"])) {
+	if($_GET["cod"] != "")  $sql="SELECT * FROM editarproductos WHERE codigo = '" . $_GET["cod"] . "'";
+}
+$result=mysqli_query($conn,$sql);
+
+while($mostrar=mysqli_fetch_array($result))
+{
+?>
+<tr> <td><?php echo $mostrar['codigo'] ?>
+	<td><?php echo $mostrar['nombreproducto'] ?>
+	<td><?php echo $mostrar['marca'] ?>
+	<td><?php echo $mostrar['precio'] ?>
+
+</tr>
+<?php
+}
+
+?>
+
+</table>
+</form>
+</body>
+</center>
+</html>

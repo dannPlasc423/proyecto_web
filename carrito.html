@@ -1,0 +1,11 @@
+<div>
+    <img src="<?php echo $row ['imagen'] ?>" >
+    <h4>Nombre: <?php echo $row ['Nombre'] ?></h4>
+    <p>precio: <?php echo $row  ['precio']=""></p>
+    <p>precio:<?php echo $row ['cantidad']? </p>
+    <form action="carrito.php" method="get">
+    <button type="sumbit" name="remove" value="<?php echo $key ?>">Eliminar</button>
+    </form>
+    
+</div>
+<?php
